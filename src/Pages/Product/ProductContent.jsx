@@ -22,13 +22,13 @@ export default function ProductContent() {
     const [count, setCount] = useState(1);
 
     return (
-        <section class="content-section single-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="product-imgs-cont">
-                            <div class="swiper product-thumbs">
-                                <div class="swiper-wrapper">
+        <section className="content-section single-content">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div className="product-imgs-cont">
+                            <div className="swiper product-thumbs">
+                                <div className="swiper-wrapper">
                                     <div className="vertivs">
                                         <Swiper
                                             direction={'vertical'}
@@ -44,46 +44,46 @@ export default function ProductContent() {
                                             }}
                                         >
                                             <SwiperSlide>
-                                                <div class="swiper-slide">
-                                                    <div class="thumb-cont">
-                                                        <div class="thumb-img">
-                                                            <img class="" src={boot} alt='offer' />
+                                                <div className="swiper-slide">
+                                                    <div className="thumb-cont">
+                                                        <div className="thumb-img">
+                                                            <img className="" src={boot} alt='offer' />
                                                         </div>
                                                     </div>
                                                 </div>
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <div class="swiper-slide">
-                                                    <div class="thumb-cont">
-                                                        <div class="thumb-img">
-                                                            <img class="" src={categ1} alt='offer' />
+                                                <div className="swiper-slide">
+                                                    <div className="thumb-cont">
+                                                        <div className="thumb-img">
+                                                            <img className="" src={categ1} alt='offer' />
                                                         </div>
                                                     </div>
                                                 </div>
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <div class="swiper-slide">
-                                                    <div class="thumb-cont">
-                                                        <div class="thumb-img">
-                                                            <img class="" src={categ2} alt='offer' />
+                                                <div className="swiper-slide">
+                                                    <div className="thumb-cont">
+                                                        <div className="thumb-img">
+                                                            <img className="" src={categ2} alt='offer' />
                                                         </div>
                                                     </div>
                                                 </div>
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <div class="swiper-slide">
-                                                    <div class="thumb-cont">
-                                                        <div class="thumb-img">
-                                                            <img class="" src={categ3} alt='offer' />
+                                                <div className="swiper-slide">
+                                                    <div className="thumb-cont">
+                                                        <div className="thumb-img">
+                                                            <img className="" src={categ3} alt='offer' />
                                                         </div>
                                                     </div>
                                                 </div>
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <div class="swiper-slide">
-                                                    <div class="thumb-cont">
-                                                        <div class="thumb-img">
-                                                            <img class="" src={categ4} alt='offer' />
+                                                <div className="swiper-slide">
+                                                    <div className="thumb-cont">
+                                                        <div className="thumb-img">
+                                                            <img className="" src={categ4} alt='offer' />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -93,27 +93,27 @@ export default function ProductContent() {
                                 </div>
 
                             </div>
-                            <div class="swiper product-imgs">
-                                {/* <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="single-img-container">
+                            <div className="swiper product-imgs">
+                                {/* <div className="swiper-wrapper">
+                                    <div className="swiper-slide">
+                                        <div className="single-img-container">
                                             <a
                                                 data-fancybox="post"
                                                 href="images/offer/img.png"
-                                                class="single-img"
+                                                className="single-img"
                                             >
-                                                <img class="" src="images/offer/img.png" alt='offer' />
+                                                <img className="" src="images/offer/img.png" alt='offer' />
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="single-img-container">
+                                    <div className="swiper-slide">
+                                        <div className="single-img-container">
                                             <a
                                                 data-fancybox="post"
                                                 href="images/offer/img.png"
-                                                class="single-img"
+                                                className="single-img"
                                             >
-                                                <img class="" src="images/offer/img.png" alt='offer' />
+                                                <img className="" src="images/offer/img.png" alt='offer' />
                                             </a>
                                         </div>
                                     </div>
@@ -144,14 +144,14 @@ export default function ProductContent() {
                                 >
                                     {offers.map(offer =>
                                         <SwiperSlide>
-                                            <div class="swiper-slide">
-                                                <div class="single-img-container">
+                                            <div className="swiper-slide">
+                                                <div className="single-img-container">
                                                     <a
                                                         data-fancybox="post"
                                                         href="images/offer/img.png"
-                                                        class="single-img"
+                                                        className="single-img"
                                                     >
-                                                        <img class="" src={boot} alt='offer' />
+                                                        <img className="" src={boot} alt='offer' />
                                                     </a>
                                                 </div>
                                             </div>
@@ -161,122 +161,122 @@ export default function ProductContent() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="single-info-container">
-                            <h2 class="single-name">حذاء رياضي خاص من ماركة اديداس</h2>
-                            <div class="single-prices">
-                                <strong class="single-price"> 245 ريال</strong>
+                    <div className="col-lg-6">
+                        <div className="single-info-container">
+                            <h2 className="single-name">حذاء رياضي خاص من ماركة اديداس</h2>
+                            <div className="single-prices">
+                                <strong className="single-price"> 245 ريال</strong>
                             </div>
-                            <div class="desc-cont">
-                                <p class="single-pargh">
+                            <div className="desc-cont">
+                                <p className="single-pargh">
                                     حذاء رياضي للجري من ديزيرت F18 برباط للرجالحذاء رياضي للجري من
                                     ديزيرت F18 برباط للرجالحذاء رياضي للجري من ديزيرت F18 برباط
                                     للرجالحذاء رياضي للجري من ديزيرت F18 برباط للرجالحذاء رياضي
                                     للجري من ديزيرت F18 برباط للرجالحذاء رياضي للجري من ديزيرت F18
                                     برباط للرجال
                                 </p>
-                                <div class="radio-group">
-                                    <span class="radio-head"> المقاس : </span>
-                                    <div class="check-group">
-                                        <div class="check-width">
-                                            <label class="check-label">
-                                                <span class="">
+                                <div className="radio-group">
+                                    <span className="radio-head"> المقاس : </span>
+                                    <div className="check-group">
+                                        <div className="check-width">
+                                            <label className="check-label">
+                                                <span className="">
                                                     <input type="radio" name="size" />
-                                                    <span class="check-text">xxl</span>
+                                                    <span className="check-text">xxl</span>
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="check-width">
-                                            <label class="check-label">
-                                                <span class="">
+                                        <div className="check-width">
+                                            <label className="check-label">
+                                                <span className="">
                                                     <input type="radio" name="size" />
-                                                    <span class="check-text">xl</span>
+                                                    <span className="check-text">xl</span>
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="check-width">
-                                            <label class="check-label">
-                                                <span class="">
+                                        <div className="check-width">
+                                            <label className="check-label">
+                                                <span className="">
                                                     <input type="radio" name="size" />
-                                                    <span class="check-text">l</span>
+                                                    <span className="check-text">l</span>
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="check-width">
-                                            <label class="check-label">
-                                                <span class="">
+                                        <div className="check-width">
+                                            <label className="check-label">
+                                                <span className="">
                                                     <input type="radio" name="size" />
-                                                    <span class="check-text">m</span>
+                                                    <span className="check-text">m</span>
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="check-width">
-                                            <label class="check-label">
-                                                <span class="">
+                                        <div className="check-width">
+                                            <label className="check-label">
+                                                <span className="">
                                                     <input type="radio" name="size" />
-                                                    <span class="check-text">s</span>
+                                                    <span className="check-text">s</span>
                                                 </span>
                                             </label>
                                         </div>
-                                        <div class="check-width">
-                                            <label class="check-label">
-                                                <span class="">
+                                        <div className="check-width">
+                                            <label className="check-label">
+                                                <span className="">
                                                     <input type="radio" name="size" />
-                                                    <span class="check-text">xs</span>
+                                                    <span className="check-text">xs</span>
                                                 </span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="color-group">
-                                    <span class="radio-head"> اللون :</span>
-                                    <div class="check-group">
-                                        <div class="check-width">
-                                            <label class="check-label">
+                                <div className="color-group">
+                                    <span className="radio-head"> اللون :</span>
+                                    <div className="check-group">
+                                        <div className="check-width">
+                                            <label className="check-label">
                                                 <input type="radio" name="color" />
-                                                <span class="checkmark" style={{ backgroundColor: "red" }}></span>
+                                                <span className="checkmark" style={{ backgroundColor: "red" }}></span>
                                             </label>
                                         </div>
-                                        <div class="check-width">
-                                            <label class="check-label">
+                                        <div className="check-width">
+                                            <label className="check-label">
                                                 <input type="radio" name="color" />
-                                                <span class="checkmark" style={{ backgroundColor: "black" }}></span>
+                                                <span className="checkmark" style={{ backgroundColor: "black" }}></span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="single-options">
-                                <button class="item-addToCart">
+                            <div className="single-options">
+                                <button className="item-addToCart">
                                     اضف إلى السلة
                                 </button>
-                                <div class="item-qty single-item-qty">
-                                    <a role="button" class="single-qty-control qty-plus" onClick={() => setCount(count + 1)}>
-                                        <i class="fa-light fa-plus"></i>
+                                <div className="item-qty single-item-qty">
+                                    <a role="button" className="single-qty-control qty-plus" onClick={() => setCount(count + 1)} href='#l'>
+                                        <i className="fa-light fa-plus"></i>
                                     </a>
-                                    <a role="button" class="single-qty-control qty-minus" onClick={() => count > 1 ? setCount(count - 1) : setCount(count)}>
-                                        <i class="fa-light fa-minus" ></i>
+                                    <a role="button" className="single-qty-control qty-minus" onClick={() => count > 1 ? setCount(count - 1) : setCount(count)} href='#h'>
+                                        <i className="fa-light fa-minus" ></i>
                                     </a>
-                                    <input type="number" class="single-qty-input qty-input" value={count} data-max="1" data-min="1" />
+                                    <input type="number" className="single-qty-input qty-input" value={count} data-max="1" data-min="1" />
                                 </div>
                             </div>
-                            <div class="single-features">
-                                <div class="features-box">
+                            <div className="single-features">
+                                <div className="features-box">
                                     <figure>
                                         <img src={Headphones} alt="icon" />
                                     </figure>
-                                    <div class="features-text">
-                                        <h5 class="features-h">دعم ٢٤ ساعة</h5>
-                                        <span class="features-span">رسائل نصية ومكالمات</span>
+                                    <div className="features-text">
+                                        <h5 className="features-h">دعم ٢٤ ساعة</h5>
+                                        <span className="features-span">رسائل نصية ومكالمات</span>
                                     </div>
                                 </div>
-                                <div class="features-box">
+                                <div className="features-box">
                                     <figure>
                                         <img src={CreditCard} alt="icon" />
                                     </figure>
-                                    <div class="features-text">
-                                        <h5 class="features-h">وسيلة دفع امنة</h5>
-                                        <span class="features-span">دفع امن</span>
+                                    <div className="features-text">
+                                        <h5 className="features-h">وسيلة دفع امنة</h5>
+                                        <span className="features-span">دفع امن</span>
                                     </div>
                                 </div>
                             </div>

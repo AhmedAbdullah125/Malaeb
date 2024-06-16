@@ -1,18 +1,17 @@
-import { Breadcrumbs, Link, Typography } from '@mui/material'
 import React from 'react'
 
 export default function Breadcrumb() {
     return (
-        <section class="breadcrumb-sec">
-            <div class="container">
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-li">
-                        <a href="index.html" class="breadcrumb-a"> الرئيسية /</a>
+        <section className="breadcrumb-sec">
+            <div className="container">
+                <ul className="breadcrumb">
+                    <li className="breadcrumb-li">
+                        <a href="index.html" className="breadcrumb-a"> الرئيسية /</a>
                     </li>
-                    <li class="breadcrumb-li">
-                        <a href="store.html" class="breadcrumb-a"> المتجر /</a>
+                    <li className="breadcrumb-li">
+                        <a href="store.html" className="breadcrumb-a"> المتجر /</a>
                     </li>
-                    <li class="breadcrumb-li">
+                    <li className="breadcrumb-li">
                         <span> الاحذية </span>
                     </li>
                 </ul>

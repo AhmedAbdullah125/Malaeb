@@ -3,29 +3,29 @@ import React from 'react'
 export default function StoreFooter() {
     return (
         <footer>
-            <div class="container">
-                <div class="footer-cont">
-                    <div class="footer-info">
-                        <a href="index.html" class="logo">
+            <div className="container">
+                <div    qame="footer-cont">
+                    <div className="footer-info">
+                        <a href="index.html" className="logo">
                             <h2>ملاعب</h2>
                         </a>
-                        <div class="copy-rights">حقوق النشر © 2017 ملاعب مصر</div>
-                        <div class="social">
-                            <a href="#h" class="social-link">
-                                <i class="fa-category fa-linkedin"></i>
+                        <div className="copy-rights">حقوق النشر © 2017 ملاعب مصر</div>
+                        <div className="social">
+                            <a href="#h" className="social-link">
+                                <i className="fa-category fa-linkedin"></i>
                             </a>
-                            <a href="#g" class="social-link">
-                                <i class="fa-category fa-instagram"></i>
+                            <a href="#g" className="social-link">
+                                <i className="fa-category fa-instagram"></i>
                             </a>
-                            <a href="#g" class="social-link">
-                                <i class="fa-category fa-square-facebook"></i>
+                            <a href="#g" className="social-link">
+                                <i className="fa-category fa-square-facebook"></i>
                             </a>
-                            <a href="#g" class="social-link">
-                                <i class="fa-category fa-twitter"></i>
+                            <a href="#g" className="social-link">
+                                <i className="fa-category fa-twitter"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="footer-list">
+                    <div className="footer-list">
                         <ul>
                             <li><a href="#g">الشروط والاحكام</a></li>
                             <li><a href="#g">عن التطبيق</a></li>
@@ -33,7 +33,7 @@ export default function StoreFooter() {
                             <li><a href="#g">الاسئلة الشائعة</a></li>
                         </ul>
                     </div>
-                    <div class="empty-div"></div>
+                    <div className="empty-div"></div>
                 </div>
             </div>
         </footer>

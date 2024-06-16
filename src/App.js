@@ -13,6 +13,11 @@ import Product from './Pages/Product/Product';
 import Filter from './Pages/Filter/Filter';
 import Cart from './Pages/Cart/Cart';
 import Checkout from './Pages/checkout/Checkout';
+import Account from './Pages/account/Account';
+import Address from './Pages/account/Address';
+import General from './Pages/account/General';
+import Password from './Pages/account/Password';
+import AddAddress from './Pages/account/AddAddress';
 
 
 function App() {
@@ -31,6 +36,14 @@ function App() {
       { path: 'filter', element: <Filter></Filter> },
       { path: 'cart', element: <Cart></Cart> },
       { path: 'checkout', element: <Checkout></Checkout> },
+      {
+        path: 'account', element: <Account></Account>, children: [
+          { path: 'general', element: <General></General> },
+          { path: 'address', element: <Address></Address> },
+          { path: 'password', element: <Password></Password> },
+          { path: 'addAddress', element: <AddAddress></AddAddress> },
+        ]
+      },
       { path: '*', element: <NotFound></NotFound> },
     ]
   }

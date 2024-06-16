@@ -4,9 +4,9 @@ import FilterItems from './FilterItems'
 
 export default function FilterContent() {
     return (
-        <section class="content-section single-content">
-            <div class="container">
-                <div class="filter-grid">
+        <section className="content-section single-content">
+            <div className="container">
+                <div className="filter-grid">
                     <FilterCont></FilterCont>
                     <FilterItems></FilterItems>
                 </div>

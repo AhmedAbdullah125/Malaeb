@@ -15,39 +15,39 @@ export default function FilterItems() {
         { id: 6, img: product2, discount: 40, name: "قميص رياضى اصلى ", oldPrice: 140, newPrice: 110 },
     ]
     return (
-        <div class="items-filter">
-            <div class="items-header">
-                <div class="items-flex">
-                    <h3 class="items-title">التصفيات المطبقة</h3>
-                    <div class="item-result">
+        <div className="items-filter">
+            <div className="items-header">
+                <div className="items-flex">
+                    <h3 className="items-title">التصفيات المطبقة</h3>
+                    <div className="item-result">
                         <span>اجهزة الكترونية</span>
-                        <button><i class="fa-regular fa-xmark"></i></button>
+                        <button><i className="fa-regular fa-xmark"></i></button>
                     </div>
                 </div>
-                <div class="result-number">
+                <div className="result-number">
                     <span>Results found.</span>
-                    <span class="result-num">65,867</span>
+                    <span className="result-num">65,867</span>
                 </div>
             </div>
-            <div class="items-grid">
+            <div className="items-grid">
                 {
                     products.map(product =>
-                        <div class="item">
-                            <div class="item-img-container">
-                                <Link to='/product' class="item-img">
-                                    <img class="img-fluid" src={product.img} alt='Product' />
+                        <div className="item">
+                            <div className="item-img-container">
+                                <Link to='/product' className="item-img">
+                                    <img className="img-fluid" src={product.img} alt='Product' />
                                 </Link>
                             </div>
-                            <h5 class="item-name-container">
-                                <Link to='/product' class="item-name">
+                            <h5 className="item-name-container">
+                                <Link to='/product' className="item-name">
                                     {product.name}
                                 </Link>
                             </h5>
-                            <div class="prices">
-                                <del class="old-price"> {product.oldPrice} ر.س </del>
-                                <strong class="price"> {product.newPrice} ر.س </strong>
+                            <div className="prices">
+                                <del className="old-price"> {product.oldPrice} ر.س </del>
+                                <strong className="price"> {product.newPrice} ر.س </strong>
                             </div>
-                            <span class="sale">{`-${product.discount}%`} </span>
+                            <span className="sale">{`-${product.discount}%`} </span>
                         </div>
                     )
                 }

@@ -48,7 +48,7 @@ export default function Championship() {
                 <div className="championship-slider">
 
                     <div className="hh">
-                        <Swiper
+                    <Swiper
                             onBeforeInit={(swiper) => {
                                 NewsSwiperRef.current = swiper;
                             }}
@@ -60,14 +60,18 @@ export default function Championship() {
                             pagination={true}
                             navigation={false}
                             breakpoints={{
+                                991: {
+                                    slidesPerView: 3,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                },
                                 640: {
                                     slidesPerView: 1,
                                 },
-                                768: {
-                                    slidesPerView: 3,
-                                },
-                                991: {
-                                    slidesPerView: 3,
+                                
+                                100: {
+                                    slidesPerView: 1,
                                 },
                             }}
 
@@ -116,6 +120,7 @@ export default function Championship() {
                                     >
                                 </div>
                             </SwiperSlide>
+                            ...
                         </Swiper>
                         <div
                             onClick={() => NewsSwiperRef.current.slidePrev()}

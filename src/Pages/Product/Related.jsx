@@ -13,12 +13,12 @@ export default function Related() {
         { id: 4, img: product1, discount: '-40%', name: "حذاء رياضى اصلى ", oldPrice: 140, newPrice: 110 },
     ]
     return (
-        <section class="product-section">
-            <div class="container">
-                <div class="section-head">
-                    <h3 class="section-title">منتجات ذات صلة</h3>
-                    <a href="products.html" class="section-more">
-                        شاهد الكل <i class="fa-regular fa-arrow-left"></i
+        <section className="product-section">
+            <div className="container">
+                <div className="section-head">
+                    <h3 className="section-title">منتجات ذات صلة</h3>
+                    <a href="products.html" className="section-more">
+                        شاهد الكل <i className="fa-regular fa-arrow-left"></i
                         ></a>
                 </div>
                 <div className="product-cont">
