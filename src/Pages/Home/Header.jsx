@@ -45,10 +45,10 @@ export default function Header() {
                                     <a href="/#championship"> بطولات</a>
                                 </li>
                                 <li>
-                                    <Link to="store"> المتجر</Link>
+                                    <Link to="/store"> المتجر</Link>
                                 </li>
                                 <li>
-                                    <a href="#/videos"> مقاطع</a>
+                                    <a href="/#videos"> مقاطع</a>
                                 </li>
                             </ul>
                         </div>
