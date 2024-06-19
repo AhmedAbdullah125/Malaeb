@@ -1,4 +1,5 @@
-.single-content{
+
+.single-content {
   margin-bottom: 80px;
   @include max-767 {
     margin-bottom: 40px;
@@ -257,7 +258,10 @@
     -moz-appearance: textfield;
   }
   @include max-767 {
-    max-width: 100%;
+    &.item-qty {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }
 .qty-input {
@@ -306,11 +310,14 @@
 
 .single-qty-control.qty-minus {
   inset-inline-end: 0;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 25px 0px 0px 25px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   &:hover {
     background-color: $main;
     color: $white;
+  }
+  @include max-767 {
+    border-radius: 25px 0px 0px 25px;
   }
 }
 .item-request,

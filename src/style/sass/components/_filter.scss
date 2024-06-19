@@ -96,7 +96,7 @@
   justify-content: center;
   color: #fff;
   background-color: var(--main-color);
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 20px;
   display: none;
 }
@@ -155,7 +155,7 @@
     display: flex;
     flex-direction: row-reverse;
     position: fixed;
-    top: 75px;
+    top: 143px;
     inset-inline-start: calc(-100vw + 75px);
     z-index: 5;
     transition: 0.5s;

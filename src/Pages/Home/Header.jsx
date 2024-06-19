@@ -2,6 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import profile from '../../assets/profile-1.png'
 export default function Header() {
+
+    function openNav() {
+        document.getElementById('navgition').classList.add('reset-left')
+    }
+    function closeNav() {
+
+        document.getElementById('navgition').classList.remove('reset-left')
+    }
     return (
         <header>
             <div className="container">
@@ -13,7 +21,7 @@ export default function Header() {
                         <div className="search-cont">
                             <div className="search-section">
                                 <form className="search-form">
-                                    <input className="search-input"  type="text" name="" value=""  placeholder="ابحث..." />
+                                    <input className="search-input" type="text" name="" value="" placeholder="ابحث..." />
                                     <button className="search-button">
                                         <i className="iconsax" icon-name="search-normal-2"></i>
                                     </button>
@@ -25,9 +33,9 @@ export default function Header() {
                             </Link>
                         </div>
 
-                        <div className="navgition">
+                        <div className="navgition" id='navgition'>
                             <div className="nav-head">
-                                <button className="close-menu">
+                                <button className="close-menu" id='close-menu' onClick={closeNav}>
                                     <i className="iconsax" icon-name="x"></i>
                                 </button>
                             </div>
@@ -97,7 +105,7 @@ export default function Header() {
                                     </li>
                                 </ul>
                             </div>
-                            <button className="menu-bars" id="menu-id">
+                            <button className="menu-bars" id="menu-id" onClick={openNav}>
                                 <i className="iconsax" icon-name="hamburger-menu"></i>
                             </button>
                         </div>

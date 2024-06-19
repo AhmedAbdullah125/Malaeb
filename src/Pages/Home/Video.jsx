@@ -1,9 +1,5 @@
 import React, { useRef, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
-// import ReactFancyBox from 'react-fancybox'
-// import 'react-fancybox/lib/fancybox.css'
-
 import LazyLoadImage1 from '../../assets/videos/02.png'
 import LazyLoadImage2 from '../../assets/videos/03.jpg'
 import LazyLoadImage3 from '../../assets/videos/04.jpg'
@@ -17,9 +13,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Link } from 'react-router-dom'
 
 export default function Video() {
+    
     let viids = [
         { id: 1, LazyLoadImage: LazyLoadImage1 },
         { id: 2, LazyLoadImage: LazyLoadImage2 },
@@ -64,14 +60,11 @@ export default function Video() {
                 <div class="video-cont">
                     <div class="about-content">
                         <div class="video-content">
-                            {/* <ReactFancyBox
-                                thumbnail="https://loremflickr.com/320/240"
-                                image="https://www.w3schools.com/howto/LazyLoadImage_forest.jpg" /> */}
-                            <h3 class="store-title">شاهد المقاطع</h3>
-                            <p class="about-pargh">
-                                الملاعب يقدم لملاك الملاعب والأكاديميات العديد من الخدمات
-                                المميزة، مثل تسويقهم لمئات الآلاف من اللاعبين، وتسهيل
-                            </p>
+                                <h3 class="store-title">شاهد المقاطع</h3>
+                                <p class="about-pargh">
+                                    الملاعب يقدم لملاك الملاعب والأكاديميات العديد من الخدمات
+                                    المميزة، مثل تسويقهم لمئات الآلاف من اللاعبين، وتسهيل
+                                </p>
                         </div>
                     </div>
                     <div class="parent-cont parent-cont1">
@@ -150,15 +143,6 @@ export default function Video() {
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
-
-
-
-
-
-
-
-
-
                     <div class="parent-cont parent-cont2">
                         <div className="parent_slide">
                             <Swiper

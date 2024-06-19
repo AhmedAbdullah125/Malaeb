@@ -25,7 +25,7 @@ export default function CategorySection() {
         { id: 8, img: categ1, name: " قسم رياضي" },
     ]
     return (
-        <section className="category-section">
+        <section className="category-section store-cat">
             <div className="container">
                 <div className="category-slider">
                     <Swiper
@@ -37,11 +37,11 @@ export default function CategorySection() {
                         slidesPerView={5.5}
                         loop={true}
                         autoplay={true}
-                        pagination={false}
+                        pagination={true}
                         navigation={true}
                         breakpoints={{
                             991: {
-                                slidesPerView: 5,
+                                slidesPerView: 6,
                             },
                             768: {
                                 slidesPerView: 3,
@@ -50,7 +50,7 @@ export default function CategorySection() {
                                 slidesPerView: 3,
                             },
                             100: {
-                                slidesPerView: 2,
+                                slidesPerView: 3,
                             },
                         }}
 

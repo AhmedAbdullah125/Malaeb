@@ -263,6 +263,13 @@ html[dir=ltr] .progress-bar {
   align-items: center;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+.custom-pagention div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -271,21 +278,27 @@ html[dir=ltr] .progress-bar {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  color: var(--sec-color);
+  color: #191C1F;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   line-height: 40px;
   background-color: var(--white-color);
+  border: 1px solid #E4E7E9;
   text-decoration: none !important;
   transition: all 0.3s ease-in-out;
+}
+.custom-pagention a.arrow {
+  border-color: var(--main-hover);
+  color: var(--main-hover);
 }
 
 .custom-pagention a.active {
   color: var(--white-color);
   background-color: var(--main-hover);
+  border-color: var(--main-hover);
 }
 
 .custom-pagention a:hover {
@@ -294,7 +307,7 @@ html[dir=ltr] .progress-bar {
 }
 
 .custom-pagention a i {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 html[dir=ltr] .custom-pagention a i {
@@ -306,7 +319,7 @@ html[dir=ltr] .custom-pagention a i {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0 60px;
+  padding: 40px 0;
 }
 
 .page-head {
@@ -319,7 +332,7 @@ html[dir=ltr] .custom-pagention a i {
   text-align: center;
 }
 
-ol.breadcrumb {
+ul.breadcrumb {
   background-color: transparent;
   border: none;
   border-radius: 0;
@@ -331,30 +344,30 @@ ol.breadcrumb {
   justify-content: flex-start;
 }
 
-ol.breadcrumb li a,
-ol.breadcrumb li span,
-ol.breadcrumb li {
+ul.breadcrumb li {
+  padding: 0 10px;
+}
+
+ul.breadcrumb li a,
+ul.breadcrumb li span,
+ul.breadcrumb li {
   transition: all 0.3s ease-in-out;
   text-transform: capitalize;
-  font-size: 18px;
-  color: var(--white-color);
+  font-size: 14px;
+  color: #808080;
   font-weight: 400;
   text-decoration: none !important;
 }
 
-ol.breadcrumb li a:hover {
-  color: var(--main-hover);
+ul.breadcrumb li span {
+  color: var(--black-color);
+}
+ul.breadcrumb li span::after {
+  display: none;
 }
 
-ol.breadcrumb li:not(.active):after {
-  content: "\f105";
-  font-family: "Font Awesome 6 Pro";
-  padding: 0 10px;
-  font-size: 16px;
-}
-html[dir=rtl] ol.breadcrumb li:not(.active):after {
-  transform: scaleX(-1);
-  display: inline-block;
+ul.breadcrumb li a:hover {
+  color: var(--main-hover);
 }
 
 @media (max-width: 991px) {
@@ -4326,7 +4339,8 @@ html[dir=ltr] .section-more i {
   -moz-appearance: textfield;
 }
 @media only screen and (max-width: 767px) {
-  .single-item-qty {
+  .single-item-qty.item-qty {
+    width: 100%;
     max-width: 100%;
   }
 }
@@ -4379,12 +4393,17 @@ html[dir=ltr] .section-more i {
 
 .single-qty-control.qty-minus {
   inset-inline-end: 0;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 25px 0px 0px 25px;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 .single-qty-control.qty-minus:hover {
   background-color: var(--main-color);
   color: var(--white-color);
+}
+@media only screen and (max-width: 767px) {
+  .single-qty-control.qty-minus {
+    border-radius: 25px 0px 0px 25px;
+  }
 }
 
 .item-request,
@@ -4545,10 +4564,13 @@ html[dir=ltr] .section-more i {
   border-color: red;
 }
 
+.cart-table .item-qty {
+  width: 124px;
+}
+
 .item-qty {
   width: 100%;
   position: relative;
-  width: 124px;
   height: 50px;
   border-radius: 66px;
   overflow: hidden;
@@ -5124,7 +5146,7 @@ html[dir=ltr] .section-more i {
   justify-content: center;
   color: #fff;
   background-color: var(--main-color);
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 20px;
   display: none;
 }
@@ -5183,7 +5205,7 @@ html[dir=ltr] .section-more i {
     display: flex;
     flex-direction: row-reverse;
     position: fixed;
-    top: 75px;
+    top: 143px;
     inset-inline-start: calc(-100vw + 75px);
     z-index: 5;
     transition: 0.5s;
@@ -5657,6 +5679,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.store-cat .swiper-pagination-bullets, .store-cat .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 0px) !important;
+  margin-top: 20px;
+}
+.store-cat .swiper-wrapper {
+  padding: 5px;
 }
 
 @media (max-width: 991px) {

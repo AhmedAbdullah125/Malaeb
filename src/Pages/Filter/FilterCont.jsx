@@ -1,9 +1,21 @@
 import React from 'react'
 
 export default function FilterCont() {
+    function openFilter() {
+        let filterBtn = document.getElementById('filters-mobile-btn');
+        let filterCont = document.getElementById('filter-cont');
+        if (filterBtn.classList == 'filters-mobile-btn') {
+            filterCont.style.insetInlineStart = '0';
+            filterBtn.classList.add('opened');
+        }
+        else if (filterBtn.classList == 'filters-mobile-btn opened') {
+            filterCont.style.insetInlineStart = 'calc(-100vw + 75px)';
+            filterBtn.classList.remove('opened');
+        }
+    }
     return (
-        <div className="filter-cont">
-            <span className="filters-mobile-btn">
+        <div className="filter-cont" id='filter-cont'>
+            <span className="filters-mobile-btn" id='filters-mobile-btn' onClick={openFilter}>
                 <i className="fa-solid fa-filter"></i>
             </span>
             <div className="filter-panel">

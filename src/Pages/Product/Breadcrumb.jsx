@@ -6,10 +6,10 @@ export default function Breadcrumb() {
             <div className="container">
                 <ul className="breadcrumb">
                     <li className="breadcrumb-li">
-                        <a href="index.html" className="breadcrumb-a"> الرئيسية /</a>
+                        <a href="/" className="breadcrumb-a"> الرئيسية /</a>
                     </li>
                     <li className="breadcrumb-li">
-                        <a href="store.html" className="breadcrumb-a"> المتجر /</a>
+                        <a href="/store" className="breadcrumb-a"> المتجر /</a>
                     </li>
                     <li className="breadcrumb-li">
                         <span> الاحذية </span>

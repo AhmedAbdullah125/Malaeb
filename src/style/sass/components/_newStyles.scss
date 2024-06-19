@@ -189,8 +189,20 @@ body {
     align-items: center;
     justify-content: center;
 }
+.store-cat{
+    .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: var(--swiper-pagination-bottom, 0px) !important;
+        margin-top: 20px;
+    }
+    .swiper-wrapper{
+        padding: 5px;
+    }
+}
 
-
+// .single-qty-control.qty-minus{
+//     border-radius: 66px 0px 0px 66px;
+//     border: 1px solid rgb(103 103 103 / 50%);
+// }
 @media (max-width: 991px) {
     .parent-cont1{
         display: none;
