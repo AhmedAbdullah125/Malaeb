@@ -72,7 +72,7 @@ export default function Header() {
                                 </div>
                                 <ul className="profile-menu dropdown-menu">
                                     <li>
-                                        <a href="/account">
+                                        <a href="/account/general">
                                             <i className="iconsax" icon-name="user-1"></i>
                                             <span>حسابي</span>
                                         </a>
