@@ -58,6 +58,7 @@ export default function Banner() {
                                             <Link to='/product' className="banner-ancor">اشتري الان</Link>
                                             <span className="hint">{bannr.price} ريال</span>
                                         </div>
+
                                         <div className="banner-img">
                                             <img lassName="img-fluid" src={bannr.img} alt="banner" />
                                         </div>
@@ -65,6 +66,7 @@ export default function Banner() {
                                 </SwiperSlide>
                             )}
                         </Swiper>
+                        
                     </div>
                     <div className="small-banner">
                         <div className="banner-item first">

@@ -122,19 +122,11 @@ export default function Championship() {
                             </SwiperSlide>
                             ...
                         </Swiper>
-                        <div
-                            onClick={() => NewsSwiperRef.current.slidePrev()}
-                            className="swiper-button-prev"
-                        >
-                            <i className="iconsax" icon-name="arrow-left"></i>
-
+                        <div onClick={() => NewsSwiperRef.current.slidePrev()} className="swiper-button-prev" >
+                            <i className="iconsax" icon-name="arrow-left"></i> 
                         </div>
-                        <div
-                            onClick={() => NewsSwiperRef.current.slideNext()}
-                            className="swiper-button-next"
-                        >
-                            <i className="iconsax" icon-name="arrow-right"></i>
-
+                        <div onClick={() => NewsSwiperRef.current.slideNext()}  className="swiper-button-next" >
+                            <i className="iconsax" icon-name="arrow-right"></i> 
                         </div>
                     </div>
                 </div>

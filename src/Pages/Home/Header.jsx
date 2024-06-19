@@ -53,7 +53,7 @@ export default function Header() {
                             </ul>
                         </div>
                         <div className="header-btn">
-                            <a href="cart.html" className="cart-ancor">
+                            <a href="/cart" className="cart-ancor">
                                 <i className="iconsax" icon-name="shopping-cart"></i>
                                 <span className="counter">0</span>
                             </a>

@@ -4,7 +4,6 @@ import hero from '../../assets/mallab/hero.png'
 import stadium from '../../assets/mallab/stadium.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Aos from 'aos'
-import "aos/dist/aos.css"
 
 export default function Stadium() {
     useEffect(() => {

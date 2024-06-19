@@ -41,16 +41,16 @@ export default function CategorySection() {
                         navigation={true}
                         breakpoints={{
                             991: {
-                                slidesPerView: 5.75,
+                                slidesPerView: 5,
                             },
                             768: {
-                                slidesPerView: 3.75,
+                                slidesPerView: 3,
                             },
                             540: {
-                                slidesPerView: 3.75,
+                                slidesPerView: 3,
                             },
                             100: {
-                                slidesPerView: 2.75,
+                                slidesPerView: 2,
                             },
                         }}
 
@@ -69,13 +69,14 @@ export default function CategorySection() {
                         )}
                         
                     </Swiper>
-                    <div className="swiper-btn-next  swiper-btn">
-                        <i className="fa-regular fa-arrow-left"></i>
-                    </div>
-                    <div className="swiper-btn-prev swiper-btn">
-                        <i className="fa-regular fa-arrow-right"></i>
-                    </div>
-                    <div className="swiper-pagination"></div>
+                    
+
+                    <div onClick={() => NewsSwiperRef.current.slidePrev()} className="swiper-button-prev swiper-btn-next  swiper-btn" >
+                            <i className="iconsax" icon-name="arrow-left"></i> 
+                        </div>
+                        <div onClick={() => NewsSwiperRef.current.slideNext()}  className="swiper-button-next swiper-btn-prev swiper-btn" >
+                            <i className="iconsax" icon-name="arrow-right"></i> 
+                        </div>
 
 
                 </div>
