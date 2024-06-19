@@ -5375,6 +5375,10 @@ input::-webkit-inner-spin-button {
   height: auto !important;
 }
 
+.store-page .category-slider .swiper-btn {
+  top: 66px;
+}
+
 #app {
   height: 100%;
 }

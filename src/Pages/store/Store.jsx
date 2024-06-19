@@ -14,7 +14,7 @@ import Footer from './../Home/Footer';
 
 export default function Store() {
     return (
-        <div>
+        <div className='store-page'>
             <Header></Header>
             <OfferSlider></OfferSlider>
             <Feature></Feature>
