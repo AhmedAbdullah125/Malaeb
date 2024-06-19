@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react'
-import { Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import boot from '../../assets/offer/img.png'
-import categ1 from '../../assets/category/01.png';
+import categ1 from '../../assets/banner/01.png';
 import categ2 from '../../assets/category/02.png';
 import categ3 from '../../assets/category/03.png';
 import categ4 from '../../assets/category/04.png';
@@ -12,156 +12,97 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function ProductContent() {
     const NewsSwiperRef = useRef(null);
     let offers = [
         { p: "ملاعب منصة الرياضيين، تتيح لك حجز الملاعب، الإشتراك في  الأكاديميات، الإنضمام للتمارين.", img: boot },
-        { p: "ملاعب منصة الرياضيين، تتيح لك حجز الملاعب، الإشتراك في  الأكاديميات، الإنضمام للتمارين.", img: boot },
-        { p: "ملاعب منصة الرياضيين، تتيح لك حجز الملاعب، الإشتراك في  الأكاديميات، الإنضمام للتمارين.", img: boot },
+        { p: "ملاعب منصة الرياضيين، تتيح لك حجز الملاعب، الإشتراك في  الأكاديميات، الإنضمام للتمارين.", img: categ4 },
+        { p: "ملاعب منصة الرياضيين، تتيح لك حجز الملاعب، الإشتراك في  الأكاديميات، الإنضمام للتمارين.", img: categ1 },
+        { p: "ملاعب منصة الرياضيين، تتيح لك حجز الملاعب، الإشتراك في  الأكاديميات، الإنضمام للتمارين.", img: categ2 },
     ]
     const [count, setCount] = useState(1);
-
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
-        <section className="content-section single-content">
+        <section className="content-section single-content productCont">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6">
-                        <div className="product-imgs-cont">
-                            <div className="swiper product-thumbs">
-                                <div className="swiper-wrapper">
-                                    <div className="vertivs">
-                                        <Swiper
-                                            direction={'vertical'}
-                                            slidesPerView={3}
-                                            className="mySwiper"
-                                            spaceBetween={30}
-                                            navigation={false}
-                                            pagination={false}
-                                            breakpoints={{
-                                                640: { slidesPerView: 3 },
-                                                768: { lidesPerView: 3 },
-                                                991: { slidesPerView: 3 },
-                                            }}
-                                        >
-                                            <SwiperSlide>
-                                                <div className="swiper-slide">
-                                                    <div className="thumb-cont">
-                                                        <div className="thumb-img">
-                                                            <img className="" src={boot} alt='offer' />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                                <div className="swiper-slide">
-                                                    <div className="thumb-cont">
-                                                        <div className="thumb-img">
-                                                            <img className="" src={categ1} alt='offer' />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                                <div className="swiper-slide">
-                                                    <div className="thumb-cont">
-                                                        <div className="thumb-img">
-                                                            <img className="" src={categ2} alt='offer' />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                                <div className="swiper-slide">
-                                                    <div className="thumb-cont">
-                                                        <div className="thumb-img">
-                                                            <img className="" src={categ3} alt='offer' />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
-                                            <SwiperSlide>
-                                                <div className="swiper-slide">
-                                                    <div className="thumb-cont">
-                                                        <div className="thumb-img">
-                                                            <img className="" src={categ4} alt='offer' />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
-                                        </Swiper>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div className="swiper product-imgs">
-                                {/* <div className="swiper-wrapper">
-                                    <div className="swiper-slide">
-                                        <div className="single-img-container">
-                                            <a
-                                                data-fancybox="post"
-                                                href="images/offer/img.png"
-                                                className="single-img"
-                                            >
-                                                <img className="" src="images/offer/img.png" alt='offer' />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                        <div className="single-img-container">
-                                            <a
-                                                data-fancybox="post"
-                                                href="images/offer/img.png"
-                                                className="single-img"
-                                            >
-                                                <img className="" src="images/offer/img.png" alt='offer' />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div> */}
-                                <Swiper
-                                    onBeforeInit={(swiper) => {
-                                        NewsSwiperRef.current = swiper;
-                                    }}
-                                    modules={[Pagination]}
-                                    spaceBetween={30}
-                                    slidesPerView={1}
-                                    loop={true}
-                                    autoplay={true}
-                                    pagination={false}
-                                    navigation={false}
-                                    breakpoints={{
-                                        640: {
-                                            slidesPerView: 1,
-                                        },
-                                        768: {
-                                            slidesPerView: 1,
-                                        },
-                                        991: {
-                                            slidesPerView: 1,
-                                        },
-                                    }}
-
-                                >
-                                    {offers.map(offer =>
-                                        <SwiperSlide>
-                                            <div className="swiper-slide">
-                                                <div className="single-img-container">
-                                                    <a
-                                                        data-fancybox="post"
-                                                        href="images/offer/img.png"
-                                                        className="single-img"
-                                                    >
-                                                        <img className="" src={boot} alt='offer' />
-                                                    </a>
-                                                </div>
+                    <div className="col-lg-8 row productCont-mainRow">
+                        <div className="thumbs-product-slider col-3">
+                            <Swiper
+                                onBeforeInit={(swiper) => {
+                                    NewsSwiperRef.current = swiper;
+                                }}
+                                modules={[Navigation, Thumbs]}
+                                spaceBetween={"15px"}
+                                slidesPerView={2.3}
+                                loop={true}
+                                autoplay={true}
+                                navigation={false}
+                                direction="vertical"
+                                slideToClickedSlide={true}
+                                watchSlidesProgress
+                                onSwiper={setThumbsSwiper}
+                                breakpoints={{
+                                    640: {
+                                        slidesPerView: 1,
+                                    },
+                                    768: {
+                                        slidesPerView: 2.3,
+                                    },
+                                }}
+                            >
+                                {offers.map((slid) => (
+                                    <SwiperSlide>
+                                        <div className="productImg" key={slid}>
+                                            <div className="Thumbs-imgContainer">
+                                                <LazyLoadImage
+                                                    className="product-img"
+                                                    alt="img"
+                                                    src={slid.img}
+                                                />
                                             </div>
-                                        </SwiperSlide>
-                                    )}
-                                </Swiper>
-                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
+                        <div className="product-slider col-9">
+                            <Swiper
+                                modules={[Pagination, Navigation, Thumbs]}
+                                spaceBetween={0}
+                                slidesPerView={1}
+                                loop={true}
+                                autoplay={true}
+                                navigation={false}
+                                thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+                                // navigation={true}
+                                breakpoints={{
+                                    640: {
+                                        slidesPerView: 1,
+                                    },
+                                    768: {
+                                        slidesPerView: 1,
+                                    },
+                                }}
+                            >
+                                {offers.map((slid) => (
+                                    <SwiperSlide>
+                                        <div className="productImg" key={slid}>
+                                            <div className="product-imgContainer">
+                                                <LazyLoadImage
+                                                    className="product-img"
+                                                    alt="img"
+                                                    src={slid.img}
+                                                />
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-4">
                         <div className="single-info-container">
                             <h2 className="single-name">حذاء رياضي خاص من ماركة اديداس</h2>
                             <div className="single-prices">
