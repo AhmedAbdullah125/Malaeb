@@ -95,6 +95,15 @@ header {
 .top-header a {
   text-decoration: none;
 }
+.top-header{
+  .about-link{
+    height: 51px;
+    @include max-767{
+      width: 130px;
+      font-size: 16px;
+    }
+  }
+}
 .menu-bars {
   display: none;
 }

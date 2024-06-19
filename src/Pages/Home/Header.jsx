@@ -66,12 +66,7 @@ export default function Header() {
                                 <span className="counter">0</span>
                             </a>
                             <div className="user-profile dropdown">
-                                <div
-                                    className="user-cont dropdown-toggle"
-                                    data-bs-toggle="dropdown"
-                                    role="button"
-                                    aria-expanded="false"
-                                >
+                                <div className="user-cont dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >
                                     <div className="user-info">
                                         <img src={profile} className="profile-img" alt='Profile' />
                                         <span>عمر اشرف</span>
@@ -105,6 +100,7 @@ export default function Header() {
                                     </li>
                                 </ul>
                             </div>
+                            <a href="#11" className="about-link d-none">تسجيل</a>
                             <button className="menu-bars" id="menu-id" onClick={openNav}>
                                 <i className="iconsax" icon-name="hamburger-menu"></i>
                             </button>
