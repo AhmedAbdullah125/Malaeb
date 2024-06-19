@@ -17,7 +17,7 @@ export default function Latest() {
             <div className="container">
                 <div className="section-head">
                     <h3 className="section-title">وصل حديثا</h3>
-                    <a href="products.html" className="section-more">
+                    <a href="/product" className="section-more">
                         شاهد الكل <i className="fa-regular fa-arrow-left"></i
                         ></a>
                 </div>
