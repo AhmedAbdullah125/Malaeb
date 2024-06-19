@@ -3,9 +3,7 @@ import img1 from '../../assets/offer/img.png'
 import img2 from '../../assets/product/01.png'
 import img3 from '../../assets/product/02.png'
 import { NavLink } from 'react-router-dom'
-import {  Typography } from '@mui/material'
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Link from '@mui/material/Link';
+
 
 
 export default function CartContent() {
@@ -88,7 +86,7 @@ export default function CartContent() {
             </table>
             <div className="cart-btns">
               <button type="button">تحديث السلة</button>
-              <a href="#">العودة للتسوق</a>
+              <a href="/store">العودة للتسوق</a>
             </div>
           </div>
           <div className="cart-total">
