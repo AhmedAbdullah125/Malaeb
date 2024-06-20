@@ -5144,7 +5144,7 @@ html[dir=ltr] .section-more i {
 }
 @media only screen and (max-width: 991px) {
   .items-grid {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 }

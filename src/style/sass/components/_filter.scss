@@ -85,7 +85,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   @include max-991 {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 }
