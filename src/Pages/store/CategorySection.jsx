@@ -34,14 +34,14 @@ export default function CategorySection() {
                         }}
                         modules={[Pagination]}
                         spaceBetween={30}
-                        slidesPerView={5.5}
+                        slidesPerView={8}
                         loop={true}
                         autoplay={true}
                         pagination={true}
                         navigation={true}
                         breakpoints={{
                             991: {
-                                slidesPerView: 6,
+                                slidesPerView: 8,
                             },
                             768: {
                                 slidesPerView: 3,
