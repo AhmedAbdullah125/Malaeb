@@ -25,8 +25,8 @@ export default function ProductContent() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
         <section className="content-section single-content productCont">
-            <div className="container">
-                <div className="row">
+            <div className="container ">
+                <div className="row row-cont">
                     <div className="col-lg-8 row productCont-mainRow">
                         <div className="thumbs-product-slider col-3">
                             <Swiper
@@ -35,7 +35,7 @@ export default function ProductContent() {
                                 }}
                                 modules={[Navigation, Thumbs]}
                                 spaceBetween={"15px"}
-                                slidesPerView={2.3}
+                                slidesPerView={2}
                                 loop={true}
                                 autoplay={true}
                                 navigation={false}
@@ -44,11 +44,11 @@ export default function ProductContent() {
                                 watchSlidesProgress
                                 onSwiper={setThumbsSwiper}
                                 breakpoints={{
-                                    640: {
-                                        slidesPerView: 1,
-                                    },
-                                    768: {
-                                        slidesPerView: 2.3,
+                                    768: { slidesPerView: 3, },
+                                    
+                                    100: {
+                                        slidesPerView: 3,
+                                        direction: "horizontal"
                                     },
                                 }}
                             >
