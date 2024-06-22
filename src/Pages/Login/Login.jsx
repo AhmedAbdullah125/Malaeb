@@ -75,7 +75,7 @@ export default function Login() {
                                 <h2 className="form-head">اهلا بيك سجل دخولك</h2>
                                 <div className="register-ancor">
                                     <span className="register-span">ليس لديك حساب؟ </span>
-                                    <a href="registration.html" className="register-btn"> انشاء حساب</a>
+                                    <Link to='/signup' className="register-btn"> انشاء حساب</Link>
                                 </div>
                                 <div className="form-group">
                                     <label className="form-label">البريد الالكتروني</label>
