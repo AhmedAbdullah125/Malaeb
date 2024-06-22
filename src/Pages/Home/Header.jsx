@@ -21,7 +21,7 @@ export default function Header() {
                         <div className="search-cont">
                             <div className="search-section">
                                 <form className="search-form">
-                                    <input className="search-input" type="text" name="" value="" placeholder="ابحث..." />
+                                    <input className="search-input" type="text" name=""  placeholder="ابحث..." />
                                     <button className="search-button">
                                         <i className="iconsax" icon-name="search-normal-2"></i>
                                     </button>

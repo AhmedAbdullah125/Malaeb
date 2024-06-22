@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -6,9 +7,9 @@ export default function Footer() {
             <div className="container">
                 <div className="footer-cont">
                     <div className="footer-info">
-                        <a href="index.html" className="logo">
+                        <Link to="/" className="logo">
                             <h2>ملاعب</h2>
-                        </a>
+                        </Link>
                         <div className="copy-rights">حقوق النشر © 2017 ملاعب مصر</div>
                         <div className="social">
                             <a href="#1" className="social-link">
