@@ -18,6 +18,7 @@ import Address from './Pages/account/Address';
 import General from './Pages/account/General';
 import Password from './Pages/account/Password';
 import AddAddress from './Pages/account/AddAddress';
+import Orders from './Pages/Orders/Orders';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       { path: 'product', element: <Product></Product> },
       { path: 'filter', element: <Filter></Filter> },
       { path: 'cart', element: <Cart></Cart> },
+      { path: 'orders', element: <Orders></Orders> },
       { path: 'checkout', element: <Checkout></Checkout> },
       {
         path: 'account', element: <Account></Account>, children: [
