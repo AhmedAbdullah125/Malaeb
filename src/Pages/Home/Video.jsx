@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import LazyLoadImage1 from "../../assets/videos/02.png";
 import LazyLoadImage2 from "../../assets/videos/03.jpg";
@@ -25,31 +25,6 @@ export default function Video() {
     { id: 7, LazyLoadImage: LazyLoadImage7 },
   ];
   const NewsSwiperRef = useRef(null);
-
-  let arr = [1, 2, 3];
-  var min = 1;
-  var max = arr.length + 1;
-  var rand = 0;
-  let [ord, setOrd] = useState(1);
-  let [ord2, setOrd1] = useState(1);
-  let [ord3, setOrd2] = useState(1);
-  setInterval(function () {
-    if (ord === 1) {
-      setOrd(2);
-      setOrd2(3);
-      setOrd1(1);
-    } else if (ord === 2) {
-      setOrd(3);
-      setOrd2(1);
-      setOrd1(2);
-    } else if (ord === 3) {
-      setOrd(1);
-      setOrd2(2);
-      setOrd1(3);
-    }
-    console.log(ord);
-  }, 3000);
-
   return (
     <section class="video-section" id="videos">
       <div class="container">
@@ -197,7 +172,7 @@ export default function Video() {
                   </div>
                 </SwiperSlide>
                 {viids.map((viid) => (
-                  <SwiperSlide>
+                  <SwiperSlide key={viid.id}>
                     <div class="slide slide swiper-slide swiper-slide-active">
                       <a href={viid.LazyLoadImage} data-fancybox="post">
                         <figure>

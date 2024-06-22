@@ -23,7 +23,7 @@ export default function Related() {
                 </div>
                 <div className="product-cont">
                     {products.map(product =>
-                        <div className="item">
+                        <div className="item" key={product.id}>
                             <div className="item-img-container">
                                 <Link to='/product' className="item-img"> <LazyLoadImage className="img-fluid" src={product.img} /> </Link>
                             </div>

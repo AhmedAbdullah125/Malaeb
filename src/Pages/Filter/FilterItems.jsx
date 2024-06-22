@@ -32,7 +32,7 @@ export default function FilterItems() {
             <div className="items-grid">
                 {
                     products.map(product =>
-                        <div className="item">
+                        <div className="item" key={product.id}>
                             <div className="item-img-container">
                                 <Link to='/product' className="item-img">
                                     <img className="img-fluid" src={product.img} alt='Product' />

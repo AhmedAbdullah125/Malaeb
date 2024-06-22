@@ -40,7 +40,7 @@ export default function CartContent() {
               <tbody>
 
                 {cartItems.map((item) =>
-                  <tr>
+                  <tr key={item.id}>
                     <td colspan="5">
                       <div className="cart-flex">
                         <figure className="cart-figure">

@@ -56,7 +56,7 @@ export default function CategorySection() {
 
                     >
                         {categotries.map(category =>
-                            <SwiperSlide>
+                            <SwiperSlide key={category.id}>
                                 <div className="brand">
                                     <Link to='/product' className="category-ancor">
                                         <figure className="category-figure">

@@ -6,7 +6,6 @@ import PreLoader from '../preLoader/PreLoader';
 import * as Yup from 'yup';
 import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik'
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 const validationSchema = Yup.object({
@@ -45,9 +44,7 @@ export default function Login() {
         //     setError("");
         //     console.log("hi");
         // }
-
         navigate('/');
-
     }
 
 
@@ -69,9 +66,9 @@ export default function Login() {
                 <div className="form-section">
                     <div className="form-container">
                         <div className="upper-head">
-                            <a href="index.html" className="logo">
+                            <Link to="/" className="logo">
                                 <h2>ملاعب</h2>
-                            </a>
+                            </Link>
                         </div>
                         <form className="login-form" onSubmit={formik.handleSubmit}>
                             <div className="form-cont">

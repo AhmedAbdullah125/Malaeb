@@ -20,7 +20,7 @@ export default function Payment() {
         <div className="checkout-pay">
             <form action="">
                 {products.map((product) =>
-                    <div className="checkout-item">
+                    <div className="checkout-item" key={product.id}>
                         <div className="checkout-info">
                             <figure>
                                 <img src={product.img} alt="product" />

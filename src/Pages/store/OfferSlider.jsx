@@ -45,7 +45,7 @@ export default function OfferSlider() {
 
                     >
                         {offers.map(offer =>
-                            <SwiperSlide>
+                            <SwiperSlide key={offer}>
                                 <div className="offer">
                                     <Link to="/product" className="pro-img">
                                         <div className="offer-content">

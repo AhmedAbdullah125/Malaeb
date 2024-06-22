@@ -1,10 +1,9 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState  } from "react";
 import { Navigation, Pagination, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import boot from "../../assets/offer/img.png";
 import categ1 from "../../assets/banner/01.png";
 import categ2 from "../../assets/category/02.png";
-import categ3 from "../../assets/category/03.png";
 import categ4 from "../../assets/category/04.png";
 import Headphones from "../../assets/features-icon/Headphones.png";
 import CreditCard from "../../assets/features-icon/CreditCard.png";
@@ -66,7 +65,7 @@ export default function ProductContent() {
                   }
                 >
                   {offers.map((slid) => (
-                    <SwiperSlide>
+                    <SwiperSlide key={slid}>
                       <div className="thumpImg" key={slid}>
                         <div className="Thumbs-imgContainer">
                           <LazyLoadImage
@@ -97,7 +96,7 @@ export default function ProductContent() {
                   // navigation={true}
                 >
                   {offers.map((slid) => (
-                    <SwiperSlide>
+                    <SwiperSlide key={slid}>
                       <div className="productImg" key={slid}>
                         <div className="product-imgContainer">
                           <LazyLoadImage

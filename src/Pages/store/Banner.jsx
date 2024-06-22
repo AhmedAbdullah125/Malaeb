@@ -49,7 +49,7 @@ export default function Banner() {
 
                         >
                             {banners.map(bannr =>
-                                <SwiperSlide>
+                                <SwiperSlide key={bannr}>
                                     <div className="banner-product">
                                         <div className="banner-content">
                                             <h5 className="banner-head">{bannr.title}</h5>

@@ -81,7 +81,7 @@ export default function Header() {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/orders">
+                                        <a href="/orders/01">
                                             <i className="iconsax" icon-name="basket-tick-1"></i>
                                             <span>طلباتي السابقة</span>
                                         </a>
