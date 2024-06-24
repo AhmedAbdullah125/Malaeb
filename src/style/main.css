@@ -5838,4 +5838,22 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+.outlet {
+  padding-bottom: 256px;
+  position: relative;
+  min-height: 100vh;
+}
+.outlet .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .outlet {
+    padding-bottom: 442px;
+    position: relative;
+    min-height: 100vh;
+  }
 }/*# sourceMappingURL=main.css.map */

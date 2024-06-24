@@ -9,10 +9,14 @@ import LazyLoadImage6 from "../../assets/videos/07.jpg";
 import LazyLoadImage7 from "../../assets/videos/08.jpg";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+
 
 export default function Video() {
   let viids = [
@@ -25,6 +29,26 @@ export default function Video() {
     { id: 7, LazyLoadImage: LazyLoadImage7 },
   ];
   const NewsSwiperRef = useRef(null);
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+  // new Fancybox(
+  //   [
+  //     {
+  //       src: "<p>Lorem ipsum dolor sit amet.</p>",
+  //       type: "html",
+  //     },
+  //   ],
+  //   {
+  //     // Your custom options
+  //   }
+  // );
+  // Fancybox.fromNodes(
+  //   Array.from(document.querySelectorAll('[data-fancybox="gallery"]')),
+  //   {
+  //     // Your custom options
+  //   }
+  // );
   return (
     <section class="video-section" id="videos">
       <div class="container">
@@ -139,20 +163,20 @@ export default function Video() {
                 autoplay={true}
                 pagination={true}
                 navigation={true}
-                // breakpoints={{
-                //   991: {
-                //     slidesPerView: 5,
-                //   },
-                //   768: {
-                //     slidesPerView: 3,
-                //   },
-                //   540: {
-                //     slidesPerView: 3,
-                //   },
-                //   100: {
-                //     slidesPerView: 2,
-                //   },
-                // }}
+              // breakpoints={{
+              //   991: {
+              //     slidesPerView: 5,
+              //   },
+              //   768: {
+              //     slidesPerView: 3,
+              //   },
+              //   540: {
+              //     slidesPerView: 3,
+              //   },
+              //   100: {
+              //     slidesPerView: 2,
+              //   },
+              // }}
               >
                 <SwiperSlide>
                   <div class="slide">
@@ -186,6 +210,7 @@ export default function Video() {
                   </SwiperSlide>
                 ))}
               </Swiper>
+
             </div>
           </div>
         </div>

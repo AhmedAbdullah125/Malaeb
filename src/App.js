@@ -18,6 +18,7 @@ import General from './Pages/account/General';
 import Password from './Pages/account/Password';
 import AddAddress from './Pages/account/AddAddress';
 import Orders from './Pages/Orders/Orders';
+import Policies from './Pages/policies/Policies';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
       { path: 'cart', element: <Cart></Cart> },
       { path: 'orders/*', element: <Orders></Orders> },
       { path: 'checkout', element: <Checkout></Checkout> },
+      { path: 'policies', element: <Policies></Policies> },
       {
         path: 'account', element: <Account></Account>, children: [
           { path: 'general', element: <General></General> },
