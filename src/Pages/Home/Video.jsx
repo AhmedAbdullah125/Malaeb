@@ -94,6 +94,13 @@ export default function Video() {
                   </a>
                 </div>
                 <div class="slide">
+                  <a href={LazyLoadImage5} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage5} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
                   <a href={LazyLoadImage2} data-fancybox="post">
                     {" "}
                     <figure>
@@ -103,25 +110,16 @@ export default function Video() {
                   </a>
                 </div>
                 <div class="slide">
-                  <a href={LazyLoadImage3} data-fancybox="post">
+                  <a href={LazyLoadImage6} data-fancybox="post">
                     <figure>
-                      <LazyLoadImage src={LazyLoadImage3} alt="videos" />
+                      <LazyLoadImage src={LazyLoadImage6} alt="videos" />
                     </figure>
                   </a>
                 </div>
                 <div class="slide">
-                  <a href={LazyLoadImage4} data-fancybox="post">
+                  <a href={LazyLoadImage6} data-fancybox="post">
                     <figure>
-                      <LazyLoadImage src={LazyLoadImage4} alt="videos" />
-                    </figure>
-                  </a>
-                </div>
-              </div>
-              <div class="block2">
-                <div class="slide">
-                  <a href={LazyLoadImage5} data-fancybox="post">
-                    <figure>
-                      <LazyLoadImage src={LazyLoadImage5} alt="videos" />
+                      <LazyLoadImage src={LazyLoadImage6} alt="videos" />
                     </figure>
                   </a>
                 </div>
@@ -140,9 +138,116 @@ export default function Video() {
                   </a>
                 </div>
                 <div class="slide">
+                  <a href={LazyLoadImage3} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage3} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage4} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage4} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage4} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage4} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a
+                    href="images/videos/SampleVideo_1280x720_20mb.mp4"
+                    type="video/mp4"
+                    data-fancybox="vision"
+                  >
+                    <figure>
+                      <video width="320" height="240">
+                        <source
+                          src="images/videos/SampleVideo_1280x720_20mb.mp4"
+                          type="video/mp4"
+                        />
+                        <source
+                          src={require("../../assets/videos/vid1.mp4")}
+                          type="video/ogg"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage1} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage1} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage5} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage5} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage2} data-fancybox="post">
+                    {" "}
+                    <figure>
+                      {" "}
+                      <LazyLoadImage src={LazyLoadImage2} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage6} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage6} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage6} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage6} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage6} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage6} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
                   <a href={LazyLoadImage7} data-fancybox="post">
                     <figure>
                       <LazyLoadImage src={LazyLoadImage7} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage3} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage3} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage4} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage4} alt="videos" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href={LazyLoadImage4} data-fancybox="post">
+                    <figure>
+                      <LazyLoadImage src={LazyLoadImage4} alt="videos" />
                     </figure>
                   </a>
                 </div>
@@ -178,23 +283,7 @@ export default function Video() {
               //   },
               // }}
               >
-                <SwiperSlide>
-                  <div class="slide">
-                    <a
-                      href="../../assets/videos/vid1.mp4"
-                      data-fancybox="vision"
-                    >
-                      <figure>
-                        <video width="320" height="240">
-                          <source
-                            src={require("../../assets/videos/vid1.mp4")}
-                            type="video/ogg"
-                          />
-                        </video>
-                      </figure>
-                    </a>
-                  </div>
-                </SwiperSlide>
+             
                 {viids.map((viid) => (
                   <SwiperSlide key={viid.id}>
                     <div class="slide slide swiper-slide swiper-slide-active">

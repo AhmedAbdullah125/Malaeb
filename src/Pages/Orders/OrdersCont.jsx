@@ -3,10 +3,10 @@ import Boot from '../../assets/offer/img.png'
 import product2 from '../../assets/product/01.png'
 import product3 from '../../assets/product/02.png'
 import product4 from '../../assets/product/02.png'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default function OrdersCont() {
-    let orderd = [
+    let orders = [
         { id: 1, img: Boot, name: "حذاء رياضي خاص", price: 245, quantity: 5, status: "delevered", date: "3 ابريل و 2022" },
         { id: 2, img: product2, name: "حذاء رياضي خاص", price: 245, quantity: 5, status: "pending", date: "3 ابريل و 2022" },
         { id: 2, img: product3, name: "حذاء رياضي خاص", price: 245, quantity: 5, status: "delevered", date: "3 ابريل و 2022" },
@@ -14,7 +14,7 @@ export default function OrdersCont() {
 
     ]
     return (
-        <div>
+        <div className='order-cont'>
             <section className="content-section single-content">
                 <div className="container">
                     <div className="orders-cont">
@@ -28,11 +28,12 @@ export default function OrdersCont() {
                                         <th colspan="2">الكمية</th>
                                         <th colspan="2">الحالة</th>
                                         <th colspan="2">التاريخ</th>
+                                        <th colspan="2"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {
-                                        orderd.map((order) =>
+                                        orders.map((order) =>
                                             <tr key={order.id}>
                                                 <td colspan="5">
                                                     <div className="cart-flex">
@@ -47,9 +48,15 @@ export default function OrdersCont() {
                                                     <div className="qty-number">{order.quantity}</div>
                                                 </td>
                                                 <td colspan="2">
-                                                    <span className={order.status==="delevered"?"order-status deliverd":order.status==="pending"?"order-status pending":order.status==="failed"?"order-status uncompleted":""}>{order.status="delevered"?"تم التوصيل":order.status==="pending"?"قيد الانتظار":order.status==="failed"?"لم يكتمل":""}</span>
+                                                    <span className={order.status === "delevered" ? "order-status deliverd" : order.status === "pending" ? "order-status pending" : order.status === "failed" ? "order-status uncompleted" : ""}>{order.status = "delevered" ? "تم التوصيل" : order.status === "pending" ? "قيد الانتظار" : order.status === "failed" ? "لم يكتمل" : ""}</span>
                                                 </td>
                                                 <td colspan="2">{order.date}</td>
+                                                <td colspan="2">
+                                                    <Link to ="/details"  className="nav-link add-select-address" type="button" >
+                                                        
+                                                        تفاصيل الطلب
+                                                    </Link>
+                                                </td>
                                             </tr>
                                         )
                                     }

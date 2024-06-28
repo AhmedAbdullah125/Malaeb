@@ -1,4 +1,4 @@
-import React, { useRef, useState  } from "react";
+import React, { useRef, useState } from "react";
 import { Navigation, Pagination, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import boot from "../../assets/offer/img.png";
@@ -12,8 +12,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
 export default function ProductContent() {
   const NewsSwiperRef = useRef(null);
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
   let offers = [
     {
       p: "ملاعب منصة الرياضيين، تتيح لك حجز الملاعب، الإشتراك في  الأكاديميات، الإنضمام للتمارين.",
@@ -38,7 +44,10 @@ export default function ProductContent() {
   ];
   const [count, setCount] = useState(1);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
+  let features = [
+    { id: 1, name: 'دعم ٢٤ ساعة', p: "رسائل نصية ومكالمات", img: Headphones ,status:true},
+    { id: 2, name: 'وسيلة دفع امنة', p: "دفع امن", img: CreditCard ,status:true},
+  ]
   return (
     <section className="content-section single-content productCont">
       <div className="container ">
@@ -93,17 +102,19 @@ export default function ProductContent() {
                         ? thumbsSwiper
                         : null,
                   }}
-                  // navigation={true}
+                // navigation={true}
                 >
                   {offers.map((slid) => (
                     <SwiperSlide key={slid}>
                       <div className="productImg" key={slid}>
                         <div className="product-imgContainer">
-                          <LazyLoadImage
-                            className="product-img"
-                            alt="img"
-                            src={slid.img}
-                          />
+                          <a href={slid.img} data-fancybox="post" className="fancyPost">
+                            <LazyLoadImage
+                              className="product-img"
+                              alt="img"
+                              src={slid.img}
+                            />
+                          </a>
                         </div>
                       </div>
                     </SwiperSlide>
@@ -164,7 +175,7 @@ export default function ProductContent() {
                     <div className="check-width">
                       <label className="check-label">
                         <span className="">
-                          <input type="radio" name="size" />
+                          <input type="radio" name="size"  />
                           <span className="check-text">s</span>
                         </span>
                       </label>
@@ -234,24 +245,19 @@ export default function ProductContent() {
                 </div>
               </div>
               <div className="single-features">
-                <div className="features-box">
-                  <figure>
-                    <img src={Headphones} alt="icon" />
-                  </figure>
-                  <div className="features-text">
-                    <h5 className="features-h">دعم ٢٤ ساعة</h5>
-                    <span className="features-span">رسائل نصية ومكالمات</span>
-                  </div>
-                </div>
-                <div className="features-box">
-                  <figure>
-                    <img src={CreditCard} alt="icon" />
-                  </figure>
-                  <div className="features-text">
-                    <h5 className="features-h">وسيلة دفع امنة</h5>
-                    <span className="features-span">دفع امن</span>
-                  </div>
-                </div>
+                {
+                  features.map((feature) =>
+                    <div className="features-box" key={feature.id}>
+                      <figure>
+                        <img src={feature.img} alt="icon" />
+                      </figure>
+                      <div className="features-text">
+                        <h5 className="features-h">{feature.name}</h5>
+                        <span className="features-span">{feature.p}</span>
+                      </div>
+                    </div>
+                  )
+                }
               </div>
             </div>
           </div>

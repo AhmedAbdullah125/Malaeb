@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import img1 from '../../assets/offer/img.png'
 import img2 from '../../assets/product/01.png'
 import img3 from '../../assets/product/02.png'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 
@@ -105,7 +105,7 @@ export default function CartContent() {
                 <div className="order-price">{total + tawseel} ريال</div>
               </div>
             </div>
-            <button type="submit" className="custom-btn">اتمام الشراء</button>
+            <Link to="/success" type="submit" className="custom-btn">اتمام الشراء</Link>
           </div>
         </div>
       </div>

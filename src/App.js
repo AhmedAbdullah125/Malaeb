@@ -19,6 +19,8 @@ import Password from './Pages/account/Password';
 import AddAddress from './Pages/account/AddAddress';
 import Orders from './Pages/Orders/Orders';
 import Policies from './Pages/policies/Policies';
+import ProductDetails from './Pages/ProductDetails/ProductDetails';
+import Success from './Pages/Success/Success';
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
       { path: 'orders/*', element: <Orders></Orders> },
       { path: 'checkout', element: <Checkout></Checkout> },
       { path: 'policies', element: <Policies></Policies> },
+      { path: 'details', element: <ProductDetails></ProductDetails> },
+      { path: 'success', element: <Success></Success> },
       {
         path: 'account', element: <Account></Account>, children: [
           { path: 'general', element: <General></General> },
